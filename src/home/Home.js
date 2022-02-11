@@ -11,8 +11,7 @@ const Radio = () => {
     const api = new RadioBrowserApi("My Radio App");
     const station = await api.searchStations({
       countryCode: "NG",
-      limit: 100,
-      offset: 0,
+      limit: 100,           
     });
     setStation(station);
     return station;
