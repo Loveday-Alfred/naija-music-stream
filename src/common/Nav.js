@@ -23,7 +23,10 @@ export default function ButtonAppBar() {
             Naija Radio Stream
           </Typography>
           <Button
-            color="inherit"
+            disableRipple
+            disabled
+            disableFocusRipple
+            disableTouchRipple
             sx={{ textTransform: "capitalize", color: "#212B36" }}
           >
             Loveday
