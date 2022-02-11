@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
             color="inherit"
             sx={{ textTransform: "capitalize", color: "#212B36" }}
           >
-            Login
+            Loveday
           </Button>
         </Toolbar>
       </AppBar>
