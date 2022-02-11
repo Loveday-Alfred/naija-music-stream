@@ -17,7 +17,7 @@ export default function ButtonAppBar() {
               fontFamily: "Pacifico",
               color: "#212B36",
               fontWeight: "bold",
-              fontSize: "30px",
+              fontSize: "15px",
             }}
           >
             Naija Radio Stream
