@@ -10,7 +10,7 @@ const Radio = () => {
   const getRadio = async () => {
     const api = new RadioBrowserApi("My Radio App");
     const station = await api.searchStations({
-      countryCode: "US",
+      countryCode: "NG",
       limit: 100,
     });
     setStation(station);
