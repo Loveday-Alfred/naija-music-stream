@@ -8,7 +8,7 @@ const Radio = () => {
   const [station, setStation] = useState();
 
   const getRadio = async () => {
-    const api = new RadioBrowserApi("My Radio App");
+    const api = new RadioBrowserApi(fetch.bind(window), "My Radio App");
     const station = await api.searchStations({
       countryCode: "NG",
       limit: 100,
