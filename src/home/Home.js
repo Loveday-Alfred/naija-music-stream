@@ -8,7 +8,7 @@ const Radio = () => {
   const [station, setStation] = useState();
 
   const getRadio = async () => {
-    const api = new RadioBrowserApi(fetch.bind(window), "My Radio App");
+    const api = new RadioBrowserApi("My Radio App");
     const station = await api.searchStations({
       countryCode: "NG",
       limit: 100,
@@ -29,7 +29,7 @@ const Radio = () => {
   return (
     <>
       <Container
-        maxWidth="md"
+        maxWidth="lg"
         sx={{ paddingTop: "7rem", paddingBottom: "7rem" }}
       >
         <Typography
@@ -46,7 +46,7 @@ const Radio = () => {
         <Grid container justifyContent="center" spacing={4}>
           {station &&
             station.map((radio) => (
-              <Grid key={radio.id} item xs={12} sm={12} md={6} lg={4}>
+              <Grid key={radio.id} item xs={12} sm={12} md={6} lg={3}>
                 <Card>
                   <div>
                     <Box
