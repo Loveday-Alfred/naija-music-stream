@@ -29,7 +29,7 @@ const Radio = () => {
   return (
     <>
       <Container
-        maxWidth="lg"
+        maxWidth="md"
         sx={{ paddingTop: "7rem", paddingBottom: "7rem" }}
       >
         <Typography
@@ -46,7 +46,7 @@ const Radio = () => {
         <Grid container justifyContent="center" spacing={4}>
           {station &&
             station.map((radio) => (
-              <Grid key={radio.id} item xs={12} sm={12} md={6} lg={3}>
+              <Grid key={radio.id} item xs={12} sm={12} md={6} lg={4}>
                 <Card>
                   <div>
                     <Box
